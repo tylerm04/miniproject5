@@ -1,21 +1,21 @@
-import java.util.Scanner;
+import java.util.Scanner;//importing scanner
 
 class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
 
-    System.out.println("Welcome! What is your current speed?");
-    int speed = scan.nextInt();
-    speedometer(speed);
+    System.out.println("Welcome! What is your current speed?");//printing first question
+    int speed = scan.nextInt();//setting answer to the speed variable
+    speedometer(speed);//calling method
 
   }
 
-  public static boolean speedometer(int speed) {
-    if (speed < 50) {
+  public static boolean speedometer(int speed) {//spedometer method
+    if (speed < 50) {//if statement 
       System.out.println("Keep up your going too slow!");
       return false;
-    } else {
-      Scanner scan = new Scanner(System.in);
+    } else { //else statement
+      Scanner scan = new Scanner(System.in);//need user input
 
       System.out.println("What is your current speed?");
       int currentSpeed = scan.nextInt();
